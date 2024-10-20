@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+}
+.board-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.square {
+    height: 150px;
+    width:  150px;
+    font-size: 2rem;
+    border: none;
+    border: 2px rgba(0, 0, 0, 0.5) solid;
+    background-color: rgba(82, 223, 225, 0.8);
+    color: rgb(203, 41, 30);
+    cursor: pointer;
+}
+.square:hover {
+    background-color: yellow;
+}
+h1 {
+    text-align: center;
+    text-shadow: 2 3 5 ;
+}
+h3 {
+    text-align: center;
+    color: blue;
+}
+.status {
+    text-align: center;
+    font-size: 2rem;
+    color: red;
+}
