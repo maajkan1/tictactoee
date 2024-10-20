@@ -41,11 +41,13 @@ export default function Board() {
   let status;
   let playAgain = false;
   if (winner) {
-    status = "Winner: " + winner;
+    status = `Winner: ${winner}`;
+    playAgain = true;
+  } else if (squares.every(square => square !== null)) {
+    status = "It's a draw!";
     playAgain = true;
   } else {
-    status = "Next player: " + (xIsNext ? "X" : "O");
-  
+    status = `Next player: ${xIsNext ? 'X' : 'O'}`;
   }
   const handlePlayAgain = () => {
     setSquares(Array(9).fill(null))
