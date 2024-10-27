@@ -1,10 +1,18 @@
 body {
     margin: 0;
 }
-.board-row {
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 200px;
+    width: 200px;
+    margin-right: 16rem;
 }
 .square {
     height: 150px;
@@ -32,3 +40,32 @@ h3 {
     font-size: 2rem;
     color: red;
 }
+/* Im a lazy man */
+@media screen and (max-width: 500px) {
+    .square {
+        width: 135px;
+        height: 135px;
+    }
+    .container {
+        margin-left: 30px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .square {
+        width: 125px;
+        height: 125px;
+    }
+    .container {
+        margin-left: 90px;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    .square {
+        width: 100px;
+        height: 100px;
+    }
+    .container {
+        margin-left: 170px;
+    }
+  }
+  /* I repeat, im lazy, do not code like this :P */
