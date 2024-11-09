@@ -24,6 +24,10 @@ body {
     color: rgb(203, 41, 30);
     cursor: pointer;
 }
+.highlight {
+    background-color: rgb(114, 245, 44);
+    transition: background-color 0.7s ease;
+}
 .square:hover {
     background-color: yellow;
 }
